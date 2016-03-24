@@ -1,0 +1,21 @@
+## API configuration
+
+# Obtain by modifying oath_example.go to request strava.Permissions.Write.
+Access token: verylongrandomtoken
+
+## Commute properties
+Distance: 10 # km
+Duration: 30 # minutes
+
+Gear ID: b1000000  # Obtain from Strava's oath_example.go
+
+# Iterate in range [Start date, End date[
+Start date: 2015-02-11 9:00  # yyyy-mm-dd hh:mm (24 hour format)
+End date: 2016-03-19         # yyyy-mm-dd
+Only weekdays: true
+
+# Exclude these date ranges. Stop on first date in pair, start again on second.
+Exclude dates:
+  - [2015-02-13, 2015-02-14]
+  - [2015-09-04, 2015-09-12]
+  - [2016-02-26, 2016-02-27]
